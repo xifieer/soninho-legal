@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soninho do Bebê</title>
+<style>
+  :root {
+    --bg: #150E1A;
+    --card: #211629;
+    --line: rgba(255, 246, 250, .12);
+    --text: #FFF6FA;
+    --muted: rgba(255, 246, 250, .72);
+    --pink: #FF8FB1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px;
+    background: radial-gradient(120% 90% at 50% 0%, #2C1E38 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 560px; width: 100%; }
+  .brand { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--pink); }
+  h1 { font-size: 38px; line-height: 1.15; margin: 14px 0 10px; letter-spacing: -.01em; }
+  p.lead { color: var(--muted); font-size: 17px; margin: 0 0 32px; }
+  a.item {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 22px; margin-bottom: 12px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    color: var(--text); text-decoration: none; font-size: 17px;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  a.item:hover { transform: translateY(-2px); border-color: var(--pink); }
+  a.item span.arrow { color: var(--pink); }
+  footer { margin-top: 30px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Soninho do Bebê</div>
+  <h1>Sons que acalmam<br>em segundos.</h1>
+  <p class="lead">Página oficial de suporte e privacidade do aplicativo Soninho do Bebê para iPhone.</p>
+
+  <a class="item" href="support.html">
+    <span>Suporte e perguntas frequentes</span>
+    <span class="arrow">→</span>
+  </a>
+  <a class="item" href="privacy.html">
+    <span>Política de privacidade</span>
+    <span class="arrow">→</span>
+  </a>
+
+  <footer>© 2026 Soninho. Todos os direitos reservados.</footer>
+</div>
+</body>
+</html>
